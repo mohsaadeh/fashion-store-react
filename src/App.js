@@ -1,24 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import Welcome from './components/Welcome'
+import NavBar from './components/NavBar';
+import { Button, Nav } from 'react-bootstrap';
+import "bootstrap/dist/css/bootstrap.min.css"
+import HeaderComponent from './components/headerNav';
+import ImageSlider from './components/ImageSlider';
 
-function App() {
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+<>
+<HeaderComponent/>
+
+<NavBar/>
+
+<ImageSlider/>
+<Button>
+  Hello
+</Button>
+</>
   );
 }
 
